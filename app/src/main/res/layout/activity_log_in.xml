@@ -39,10 +39,23 @@
         android:hint="Password" />
 
     <Button
+        android:id="@+id/btnLogin"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/password"
         android:text="Log in"
+        android:background="@drawable/btn_background"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:text="Sign Up"
         android:background="@drawable/btn_background"
         android:textColor="@color/white"
         android:textSize="20sp"
