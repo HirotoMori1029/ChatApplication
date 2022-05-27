@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.provider.ContactsContract
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
 class LogIn : AppCompatActivity() {
@@ -37,11 +38,21 @@ class LogIn : AppCompatActivity() {
             val email = edtEmail.text.toString()
             val password = edtPassword.text.toString()
 
-            //login(email, password)
+            login(email, password)
         }
     }
 
     private fun login(email: String, password: String) {
         //logic for logging users
+        mAuth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                //code for logging in user
+                    val intent = Intent(this@LogIn, MainActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(this@LogIn, "User does not exist", Toast.LENGTH_SHORT).show()
+                }
+            }
     }
 }
