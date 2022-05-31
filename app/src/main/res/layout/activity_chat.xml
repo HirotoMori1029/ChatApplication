@@ -20,6 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="100"
+        android:layout_margin="5dp"
         android:orientation="horizontal" >
 
         <EditText
@@ -32,6 +33,7 @@
             android:layout_weight="85"/>
 
         <ImageView
+            android:id="@+id/sendButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:src="@drawable/ic_launcher_foreground"
