@@ -11,6 +11,8 @@
         <entry key="app/src/main/res/layout/activity_log_in.xml" value="0.21739130434782608" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2595108695652174" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.21739130434782608" />
+        <entry key="app/src/main/res/layout/receive.xml" value="0.203125" />
+        <entry key="app/src/main/res/layout/sent.xml" value="0.203125" />
         <entry key="app/src/main/res/layout/user_layout.xml" value="0.203125" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.38333333333333336" />
       </map>
