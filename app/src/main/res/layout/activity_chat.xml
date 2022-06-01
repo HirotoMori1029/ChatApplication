@@ -36,7 +36,7 @@
             android:id="@+id/sendButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_launcher_foreground"
+            android:src="@android:drawable/ic_menu_send"
             android:layout_weight="20"/>
 
     </LinearLayout>
