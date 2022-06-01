@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.FirebaseAuth
 
 class UserAdapter(val context: Context, val userList: ArrayList<User>):
     RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
@@ -24,7 +23,7 @@ class UserAdapter(val context: Context, val userList: ArrayList<User>):
         holder.itemView.setOnClickListener {
             val intent = Intent(context, ChatActivity::class.java)
             intent.putExtra("name", currentUser.name)
-            intent.putExtra("uid", FirebaseAuth.getInstance().currentUser?.uid)
+            intent.putExtra("uid", currentUser.uid)
             context.startActivity(intent)
         }
     }

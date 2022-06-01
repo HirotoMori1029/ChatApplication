@@ -39,7 +39,11 @@ class LogIn : AppCompatActivity() {
             val email = edtEmail.text.toString()
             val password = edtPassword.text.toString()
 
-            login(email, password)
+            if(email == "" || password == "") {
+                Toast.makeText(this, "empty input", Toast.LENGTH_SHORT).show()
+            } else {
+                login(email, password)
+            }
         }
     }
 
