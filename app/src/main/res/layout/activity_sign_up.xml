@@ -10,7 +10,7 @@
         android:id="@+id/app_logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/ic_launcher_foreground"
+        android:src="@android:drawable/sym_action_chat"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp" />
 
