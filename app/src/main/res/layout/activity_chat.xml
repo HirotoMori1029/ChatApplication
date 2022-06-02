@@ -12,7 +12,9 @@
         android:layout_above="@+id/linearlayout"
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/receive"
+        tools:itemCount="3"/>
 
     <LinearLayout
         android:id="@+id/linearlayout"
